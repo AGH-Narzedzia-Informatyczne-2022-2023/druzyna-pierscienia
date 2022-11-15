@@ -1,3 +1,3 @@
 # druzyna-pierscienia
 ## Snake Pro Version
-![image](Python)
+![image](Python.jpg)
