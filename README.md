@@ -11,3 +11,6 @@ TOP 5 dostępnych Snake'ów:
 5. snake innych producentów 
 
 Jeżeli masz pomysł jak możemy rozwinąć naszą grę skontaktuj się z [nami](druzyna.pierscienia.projekt@gmail.com)!
+
+Python dodany lokalnie
+![image](image/Baumpython.jpg)
