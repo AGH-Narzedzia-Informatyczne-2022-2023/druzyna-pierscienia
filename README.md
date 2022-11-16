@@ -14,3 +14,6 @@ Jeżeli masz pomysł jak możemy rozwinąć naszą grę skontaktuj się z [nami]
 
 Python dodany lokalnie
 ![image](image/Baumpython.jpg)
+
+Lew
+![image](image/lion.jpg)
