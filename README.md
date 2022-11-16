@@ -9,4 +9,5 @@ Na tej stronie znajduje się filmik  który pomoże nam z zapoznaniem się z [pr
 TOP 5 dostępnych Snake'ów:
 1. Snake Pro Drużyny Pierścienia
 5. snake innych producentów 
+
 Jeżeli masz pomysł jak możemy rozwinąć naszą grę skontaktuj się z [nami](druzyna.pierscienia.projekt@gmail.com)!
