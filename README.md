@@ -10,6 +10,10 @@ TOP 5 dostępnych Snake'ów:
 1. Snake Pro Drużyny Pierścienia
 5. snake innych producentów 
 
+### Zastanawiasz się czym jest nasz Snake?
+
+Gra ta polega na tym, że gracz steruje wężem, który porusza się po planszy i zbierając jedzenie, próbuje nie uderzyć własną głową o ściany otaczające plansze jak również o część swojego ciała. Kiedy wąż zje jedzenie, wydłuża się co przyczynia się do utrudnienia gry. Gracz kontroluje kierunek ruchu węża za pomocą klawiszy strzałek, wąż porusz się bez przerwy. Zatrzymuje go jedynie zakończenie gry.
+
 Jeżeli masz pomysł jak możemy rozwinąć naszą grę skontaktuj się z [nami](druzyna.pierscienia.projekt@gmail.com)!
 
 Python dodany lokalnie
