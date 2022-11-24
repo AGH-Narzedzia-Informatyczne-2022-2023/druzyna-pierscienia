@@ -38,4 +38,4 @@ def on_release(key):
         return False
 with pynput.keyboard.Listener(on_press=on_press,on_release=on_release) as listener:
     listener.join()
-    print(x)
+
