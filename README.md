@@ -1,5 +1,9 @@
 # druzyna-pierscienia
 ## Snake Pro Version
+Dokumentacja
+1.[branch1](https://github.com/AGH-Narzedzia-Informatyczne-2022-2023/druzyna-pierscienia/blob/main/docs/f1.rm)
+
+
 ![image](image/Python.jpg)
 #
 ## Procesy powstawania podstawowych gier
