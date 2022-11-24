@@ -1,7 +1,7 @@
 # druzyna-pierscienia
 ## Snake Pro Version
 ### Dokumentacja
-1.[branch1](https://github.com/AGH-Narzedzia-Informatyczne-2022-2023/druzyna-pierscienia/blob/main/docs/f1.rm)
+1.[branch1](https://github.com/AGH-Narzedzia-Informatyczne-2022-2023/druzyna-pierscienia/blob/main/docs/f1.md)
 
 
 ![image](image/Python.jpg)
