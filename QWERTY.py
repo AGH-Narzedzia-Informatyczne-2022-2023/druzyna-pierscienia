@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 surface = pygame.display.set_mode((400, 380))
 def render_background():
-        bg = pygame.image.load("x/p.png")
+        bg = pygame.image.load("druzyna-pierscienia/snakeeeeeeee.png")
         surface.blit(bg, (0,0))
 def draw_block():
     render_background()
@@ -14,7 +14,7 @@ if __name__ == '__main__':
     render_background()
 
 
-    block = pygame.image.load("x/z.jpg").convert()
+    block = pygame.image.load("druzyna-pierscienia/sniper monkey.jpg").convert()
 
     block_x, block_y = 100, 100
 
