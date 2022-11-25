@@ -1,6 +1,5 @@
-print("hello snake")
-print("hello snake")
 #funckja zczytuje z klawiatury w a s d i przesuwa 'glowe' weza
+#potrzeba to zatwiedzic
 import os
 X=20
 Y=20
