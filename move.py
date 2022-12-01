@@ -1,6 +1,9 @@
 import pygame, sys, os
 
 pygame.init()
+cell_size = 20
+
+
 
 screen = pygame.display.set_mode((400,500))
 clock = pygame.time.Clock()
@@ -16,6 +19,8 @@ while True:
     screen.fill((175,215,70))
     screen.blits(test_surface, (200,250))
     pygame.display.update()
-    clock.tick(60)
+    clock.tick(120)
+
+
 
 
