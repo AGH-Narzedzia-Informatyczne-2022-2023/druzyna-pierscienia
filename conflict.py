@@ -29,6 +29,16 @@ while True:
     pygame.display.update()
     clock.tick(120)
 
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
+    screen.fill((175,212,75))
+    screen.blits(test_surface, (200,250))
+    pygame.display.update()
+    clock.tick(120)
 
 
 print("Hello, here is some text in order to test conflicts...")
