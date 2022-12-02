@@ -12,6 +12,7 @@ except ImportError:
     import pynput
 x=10
 y=10
+print("blad")
 def on_press(key):
     global x
     global y
