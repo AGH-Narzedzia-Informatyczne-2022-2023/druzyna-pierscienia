@@ -1,5 +1,6 @@
 #funckja zczytuje z klawiatury w a s d i przesuwa 'glowe' weza
 #potrzeba to zatwiedzic
+print("blad")
 import os
 X=20
 Y=20
