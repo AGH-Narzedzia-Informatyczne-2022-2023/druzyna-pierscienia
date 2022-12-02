@@ -61,6 +61,7 @@ int main(void) {
     int tab[size];
     int tab0[size];
     int tab1[size];
+    PRINTF("TU WYSTAPI KONFLIKT");
     for(int i = 0; i < size; i ++)
    {
         int a = rand() % (max + 1);
