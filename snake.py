@@ -5,8 +5,8 @@ class Snake:
     def __init__(self, surface):
         self.parent_screen = surface
         self.block = pygame.image.load("resources/block.jpg").convert()
-        self.x = 100
-        self.y = 100
+        self.x = 50
+        self.y = 50
         self.direction = 'down'
 
     def move_left(self):
