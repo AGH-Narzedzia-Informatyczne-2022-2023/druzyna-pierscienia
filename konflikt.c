@@ -61,7 +61,7 @@ int main(void) {
     int tab[size];
     int tab0[size];
     int tab1[size];
-    PRINTF("TU WYSTAPI KONFLIKT");
+    printf("TU WYSTAPI KONFLIKT");
     for(int i = 0; i < size; i ++)
    {
         int a = rand() % (max + 1);
@@ -71,10 +71,12 @@ int main(void) {
    }
    
     printf("\n %.2lf", average(tab,size));
-    separate(tab, tab0, tab1, size, average(tab,size), 2 );
+    
     print_int_table1D(tab0, separate(tab, tab0, tab1, size, average(tab,size), 0 ));
+    
     printf("\n %.2lf", average(tab0,separate(tab, tab0, tab1, size, average(tab,size), 0 )));
-    print_int_table1D(tab1, separate(tab, tab0, tab1, size, average(tab,size), 1 ));
+    
+    printf("TU WYSTAPI KONFLIKT");
     printf("\n %.2lf\n", average(tab1,separate(tab, tab0, tab1, size, average(tab,size), 1 )));
     
     return 0;
