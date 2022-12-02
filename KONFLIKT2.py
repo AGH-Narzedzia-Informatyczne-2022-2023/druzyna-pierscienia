@@ -1,4 +1,4 @@
-print("hello")
+print("goodby")
 print("tabelka mnozenia")
 for i in range(1,11):
     for j in range(1,11):
