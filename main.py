@@ -33,7 +33,7 @@ def on_press(key):
 
     except AttributeError:
         pass
-
+print("blad")
 def on_release(key):
     if key == pynput.keyboard.Key.esc:
         return False
