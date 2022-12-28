@@ -1,34 +1,29 @@
-from kivy.app import App
-from kivy.uix.screenmanager import Screen, ScreenManager
+from kivymd.app import MDApp
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.screenmanager import MDScreenManager
 from kivy.lang import Builder
 import os
-#import main
+
+from kivy.core.window import Window
+Window.size = (800, 600)
 
 try:
-    import kivy
+    import kivymd
 except ImportError:
     print("brak biblioteki")
-    os.system('python -m pip install kivy')
-    import kivy
+    os.system('python -m pip install kivymd')
+    import kivymd
 
-class MenuScreen(Screen):
+class Menu(MDScreen):
     pass
 
-class ScoreboardScreen(Screen):
-    pass
-
-class SettingsScreen(Screen):
-    pass
-
-class Manager(ScreenManager):
-    pass
-    
-kv = Builder.load_file("menu.kv")
-
-class Menu(App):
+class App(MDApp):
     def build(self):
-        return kv
+        self.title = "SNAKEPRO"
+        self.theme_cls.theme_style_switch_animation = True
+        self.theme_cls.theme_style = "Dark"
+        self.theme_cls.primary_palette = "DeepOrange"
 
-Menu().run()
+        return Builder.load_file("menu.kv")
 
-
+App().run()
