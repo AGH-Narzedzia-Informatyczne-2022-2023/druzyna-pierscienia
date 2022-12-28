@@ -2,21 +2,24 @@ import pygame
 from pygame.locals import *
 import time
 import random
-import apple
-import snake
+import apple as ap
+import snake as sn
+
+SIZE = 40
+BACKGROUND_COLOR = (110, 110, 5)
 
 class Game:
     def __init__(self):
         pygame.init()
-        pygame.display.set_caption("Codebasics Snake And Apple Game")
+        pygame.display.set_caption("SNAKE PRO")
 
         pygame.mixer.init()
         self.play_background_music()
 
         self.surface = pygame.display.set_mode((1000, 800))
-        self.snake = Snake(self.surface)
+        self.snake = sn.Snake(self.surface)
         self.snake.draw()
-        self.apple = Apple(self.surface)
+        self.apple = ap.Apple(self.surface)
         self.apple.draw()
 
     def play_background_music(self):
@@ -32,8 +35,8 @@ class Game:
         pygame.mixer.Sound.play(sound)
 
     def reset(self):
-        self.snake = Snake(self.surface)
-        self.apple = Apple(self.surface)
+        self.snake = sn.Snake(self.surface)
+        self.apple = ap.Apple(self.surface)
 
     def is_collision(self, x1, y1, x2, y2):
         if x1 >= x2 and x1 < x2 + SIZE:

@@ -3,6 +3,8 @@ from pygame.locals import *
 import time
 import random
 
+SIZE = 40
+
 class Apple:
     def __init__(self, parent_screen):
         self.parent_screen = parent_screen
