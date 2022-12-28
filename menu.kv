@@ -1,65 +1,31 @@
 #:kivy 2.1
+Menu:
 
-Manager:
-    MenuScreen:
-        name: "menu"
-    ScoreboardScreen:
-        name: "scoreboard"
-    SettingsScreen: 
-        name: "settings"
-
-<MenuScreen>:
+<Menu>:
+    name: "menu"
     canvas.before:
         Rectangle:
             pos: self.pos
             size: self.size
-            source: "image/menu_background.jpg"
+            source: "image/background.png"
 
-    BoxLayout:
-        orientation: "vertical" 
-        padding: "10dp"
-        spacing: "10dp"
-        size_hint: 0.5, 1
-        pos_hint: {"center_x":0.27}
-        Button:
-            text: "Play!"
-            font_size: 32
-            on_press: main()
-        Button:
-            text: "Scoreboard"
-            font_size: 32
-            on_press: root.manager.current = "scoreboard"
-        Button:
-            text: "Settings"
-            font_size: 32
-            on_press: root.manager.current = "settings"
-        Button:
-            text: "Exit"
-            font_size: 32
-            on_press: exit()
-
-<ScoreboardScreen>:
-    BoxLayout:
+    MDCard:
         orientation: "vertical"
-        
-        Label:
-            text: "Placeholder"
-            font_size: 32
-
-        Button:
-            text: "Return"
-            font_size: 32
-            on_press: root.manager.current = "menu"
-
-<SettingsScreen>:
-    BoxLayout:
-        orientation: "vertical"
-
-        Label:
-            text: "Placeholder"
-            font_size: 32
-        
-        Button:
-            text: "Return"
-            font_size: 32
-            on_press: root.manager.current = "menu"
+        padding: "5dp"
+        pos_hint: {"center_x":.5, "center_y":.8}
+        size_hint: .4, .25
+        elevation: 3
+        MDGridLayout:
+            id: buttons_layout
+            rows: 2
+            spacing: "10dp"
+            padding: "15dp"
+            MDRaisedButton:
+                text: "PLAY!"
+                size_hint: 1, None
+                font_size: 32
+            MDRaisedButton:
+                text: "QUIT"
+                size_hint: 1, None
+                font_size: 32
+                on_release: exit()
