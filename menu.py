@@ -3,6 +3,7 @@ from kivymd.uix.screen import MDScreen
 from kivymd.uix.screenmanager import MDScreenManager
 from kivy.lang import Builder
 import os
+import game
 
 from kivy.core.window import Window
 Window.size = (800, 600)
@@ -15,7 +16,7 @@ except ImportError:
     import kivymd
 
 class Menu(MDScreen):
-    pass
+    gm = game
 
 class App(MDApp):
     def build(self):

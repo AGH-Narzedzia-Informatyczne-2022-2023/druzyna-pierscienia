@@ -11,12 +11,12 @@ BACKGROUND_COLOR = (110, 110, 5)
 class Game:
     def __init__(self):
         pygame.init()
-        pygame.display.set_caption("SNAKE PRO")
+        pygame.display.set_caption("Codebasics Snake And Apple Game")
 
         pygame.mixer.init()
         self.play_background_music()
 
-        self.surface = pygame.display.set_mode((1000, 800))
+        self.surface = pygame.display.set_mode((800, 600))
         self.snake = sn.Snake(self.surface)
         self.snake.draw()
         self.apple = ap.Apple(self.surface)
@@ -33,10 +33,13 @@ class Game:
             sound = pygame.mixer.Sound("resources/ding.mp3")
 
         pygame.mixer.Sound.play(sound)
+        # pygame.mixer.music.stop()
+
 
     def reset(self):
         self.snake = sn.Snake(self.surface)
         self.apple = ap.Apple(self.surface)
+
 
     def is_collision(self, x1, y1, x2, y2):
         if x1 >= x2 and x1 < x2 + SIZE:
@@ -56,16 +59,22 @@ class Game:
         pygame.display.flip()
 
         # snake eating apple scenario
-        if self.is_collision(self.snake.x[0], self.snake.y[0], self.apple.x, self.apple.y):
-            self.play_sound("ding")
-            self.snake.increase_length()
-            self.apple.move()
+        for i in range(self.snake.length):
+            if self.is_collision(self.snake.x[i], self.snake.y[i], self.apple.x, self.apple.y):
+                self.play_sound("ding")
+                self.snake.increase_length()
+                self.apple.move()
 
         # snake colliding with itself
         for i in range(3, self.snake.length):
             if self.is_collision(self.snake.x[0], self.snake.y[0], self.snake.x[i], self.snake.y[i]):
                 self.play_sound('crash')
                 raise "Collision Occurred"
+
+        # snake colliding with the boundries of the window
+        if not (0 <= self.snake.x[0] <= 800 and 0 <= self.snake.y[0] <= 600):
+            self.play_sound('crash')
+            raise "Hit the boundry error"
 
     def display_score(self):
         font = pygame.font.SysFont('arial',30)
@@ -76,9 +85,9 @@ class Game:
         self.render_background()
         font = pygame.font.SysFont('arial', 30)
         line1 = font.render(f"Game is over! Your score is {self.snake.length}", True, (255, 255, 255))
-        self.surface.blit(line1, (200, 300))
+        self.surface.blit(line1, (150, 250))
         line2 = font.render("To play again press Enter. To exit press Escape!", True, (255, 255, 255))
-        self.surface.blit(line2, (200, 350))
+        self.surface.blit(line2, (150, 300))
         pygame.mixer.music.pause()
         pygame.display.flip()
 
@@ -121,8 +130,8 @@ class Game:
                 pause = True
                 self.reset()
 
-            time.sleep(.25)
+            time.sleep(.1)
 
-if __name__ == '__main__':
+def start():
     game = Game()
     game.run()

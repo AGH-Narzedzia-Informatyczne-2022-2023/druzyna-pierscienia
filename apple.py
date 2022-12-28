@@ -17,5 +17,5 @@ class Apple:
         pygame.display.flip()
 
     def move(self):
-        self.x = random.randint(1,24)*SIZE
-        self.y = random.randint(1,19)*SIZE
+        self.x = random.randint(1,19)*SIZE
+        self.y = random.randint(1,14)*SIZE
