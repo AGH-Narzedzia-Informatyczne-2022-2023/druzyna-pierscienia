@@ -2,6 +2,8 @@ import pygame
 from pygame.locals import *
 import time
 import random
+import apple
+import snake
 
 class Game:
     def __init__(self):
